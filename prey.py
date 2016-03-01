@@ -22,10 +22,10 @@ for i in range (101):
 	x1 = D * Kyx * y0 * x0 - D * Kx * k0 + x0
 	y0 = y1
 	x0 = x1
-	
+	t [i] = y1
 
-tnew = numpy.array (x)
-lnew = numpy.array (y)
+tnew = numpy.array (t)
+lnew = numpy.array (l)
 
 print xnew
 print ynew
