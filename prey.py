@@ -18,5 +18,6 @@ t = range (101)
 y = range (101)
 
 for i in range (101):
-	Y0 = D * Ky * Y0 - D * Kxy * x0 
+	y0 = D * Ky * Y0 - D * Kxy * x0 * y0 + y0
+	x0 = D * Kyx * y0 * x0 - D * Kx * k0 + x0
 
