@@ -30,6 +30,9 @@ beta_n = phi(0.125 np.exp(V/80))
 beta_m = phi(4 np.exp(V/18))
 beta_h = phi(1/(np.exp((V + 30)/10) +1)
 
+def alpha_n(phi, V):
+	phi(0.07 np.exp(V/20))	
+	return alpha_n
 
 
 
