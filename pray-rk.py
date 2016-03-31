@@ -14,6 +14,9 @@ x=range(101)
 y=range(101)
 t=range(101)
 
+def f(x):
+	return   
+
 for i in range(101):
 	y1= d*ky*y0-d*kxy*x0*y0+y0
 	y0=y1
@@ -40,6 +43,3 @@ matplotlib.pyplot.plot(ynew,tnew)
 matplotlib.pyplot.show()
 matplotlib.pyplot.plot(xnew,ynew)
 matplotlib.pyplot.show()
-
-   
-

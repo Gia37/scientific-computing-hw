@@ -19,8 +19,8 @@ for i in range(101):
 	y0=y1
 	x1= d*kyx*y0*x0-d*kx*x0+x0  
 	x0=x1
-        x[i]=x1
-	y[i]=y1
+        x[i]=x0
+	y[i]=y0
 	t[i]=i*0.1
 	
 
