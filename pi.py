@@ -9,7 +9,7 @@ import sys
 np.random.seed(0)
 for j in range(7):	
 	print np.random.random()
-
+# Encontrar un numero aleatorio entre -1.5 y 1.5
 
 
 R = 1
