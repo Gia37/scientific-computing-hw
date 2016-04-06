@@ -27,4 +27,6 @@ for n in range(-1.5,1.5):
 	else y:np.sqrt(X**2) + (Y**2)<=R
 	print y + 1
 
+ldshiuvdkvzsnk
+
 	
