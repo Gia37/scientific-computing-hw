@@ -38,5 +38,7 @@ for j in range(N):
 mifuncion (3, 1, 100)
  
 
+ldshiuvdkvzsnk
+
 	
 
