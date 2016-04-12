@@ -22,3 +22,6 @@ def rwalk1d(N, p):
 print 'la posicion final es: ', rwalk1d(1000, 0.2)
 
 
+
+
+
