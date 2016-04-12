@@ -2,9 +2,9 @@
 # 
 
 import numpy as np
-import matplotlib
+import matplotlib as mplt
 import matplotlib.pyplot as plt
-import sys
+
 
 np.random.seed(0)
 
@@ -16,7 +16,7 @@ for j in range(7):
 
 R = 1
 L = 3
-N = 100
+N = 10000
 y = 1.5-np.random.random() * 3
 
 
@@ -33,12 +33,31 @@ for j in range(N):
 	if np.sqrt(x[j]**2) + (y[j]**2)<=R:
 		n = n + 1
 
-	gpi= ((L/R)**2) * (n/N)
+	gpi= (L/R)**2 * (n/float(N))
 	 
-mifuncion (3, 1, 100)
+print (np.pi, N, gpi)
+
+
+# Definiendo la funcion rwalk1d
+# p varia entre 0 y 100 porciento, entonces p va desde 0 hasta 1.0
+
+def rwalk1d(N, p):
+	s = 0
+	for i in range(N):
+		r = np.random.random()
+		if r > p: 
+			s = s + 1
+		else:	
+			s = s - 1
+	return s
+
+
+
+
+
+
  
 
-ldshiuvdkvzsnk
 
 	
 
