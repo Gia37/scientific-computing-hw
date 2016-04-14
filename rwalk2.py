@@ -15,14 +15,6 @@ p = 0.5
 h = 2 * N + 1
 
 
-def prom(n):
-	x = N * (2 * P - 1)
-	print 'el promedio es ', x
-
-def des(n):
-
-
-
 def rwalk1d(N, p):
 	s = 0
 	for i in range(N):
@@ -35,12 +27,19 @@ def rwalk1d(N, p):
 
 print 'la posicion final es: ', rwalk1d(1000, 0.5)
 
+n = 100
+N = 1000
+p = 0.5
 
+def g(N):
+	c = 0	
+	for i in range(n):
+		if x = rwalk1d(N, p):
+			c = c + 1
+			return c
 
+print x
 
-
-for i in range(n):
-	x = rwalk1d(N, p)
 	
 	
 
