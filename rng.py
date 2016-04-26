@@ -35,44 +35,42 @@ plt.show()
 
 # function sum and function numpy.cumsum
 
-# sum: basicamente suma todos los numeros que se encuentran en un arreglo
+# 1 sum: basicamente suma todos los numeros que se encuentran en un arreglo, Cumsum devuelve el acumulado total hasta una posicion determinada de un arreglo.
 
 x = [1, 2, 3, 4, 5, 6]
 y = sum(x)
 print y 
 
-# numpy.cumsum
+# 2 brownian random walk
 
-
-
-#########
-n = 200
-np.random.normal(0.0, 10, n)
+np.random.seed(0)
 
 def brownian(n):
-	
-	for i in range(n):
-		np.random.normal()
+	delta = np.random.normal(0, 1, n)
+	x = np.append(0, np.cumsum)
 
+	return x
+x = brownian(200)
+plt.plot(x)
 
+# 3
 
->>> a = np.array([[1,2,3], [4,5,6]])
->>> a
-array([[1, 2, 3],
-       [4, 5, 6]])
->>> np.cumsum(a)
-array([ 1,  3,  6, 10, 15, 21])
->>> np.cumsum(a, dtype=float)     # specifies type of output value(s)
-array([  1.,   3.,   6.,  10.,  15.,  21.])
+N = 100
+n = 200
+s2 = np.zeros(n + 1)
 
+for i in range (N):
+	x = brownian(n)
+	s2 = s2 + x**2
 
->>> np.cumsum(a,axis=0)      # sum over rows for each of the 3 columns
-array([[1, 2, 3],
-       [5, 7, 9]])
->>> np.cumsum(a,axis=1)      # sum over columns for each of the 2 rows
-array([[ 1,  3,  6],
-       [ 4,  9, 15]])
+s2 /= float(N)
+t = range(n + 1)
 
+plt.plot(t, s2, 'r-')
+plt.show()
 
+# 4
 
+slope, intercept, r_value, p_value, std_err = stats.linregress(t, s2)
+print 'Coeficiente de difusion D = ', 0.5 * slope
 
