@@ -33,3 +33,23 @@ plt.show()
 
 # 3. Crea una funcion que devuelva una nueva solucion dada una posible solucion dada 
 
+def neighbor (solution):
+	step_size = 1.0
+	return (2* np.random.random()-1) * step_size + solution
+
+
+# 4. comenzar con una solucion seleccionada al azar en el rango encontrado en el paso 4. Fijar T = 1 y Tmin = 10**-5
+
+T = 1
+Tmin = 10**-5.
+x = 
+
+# 5. Generar una nueva solucion con la funcion neighbor
+
+# 6. Decidir cual de las dos soluciones es la mejor basada en lo que comentamos anteriormente en la ecuacion 1: e**(c-c')/T>u
+
+# 7. Repita los pasos 5 y 6 100 veces
+
+# 8. Disminuye T por un factor de 0.9 y repita los pasos 5-7 hasta que la temperatura desciende por debajo de Tmin.
+
+
