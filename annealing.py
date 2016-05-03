@@ -34,7 +34,8 @@ plt.show()
 # 3. Crea una funcion que devuelva una nueva solucion dada una posible solucion dada 
 
 def neighbor (solution):
-	return (2* np.random.random()-1) * 1.0 + solution
+	step_size = 1.0
+	return (2* np.random.random()-1) *step_size + solution
 
 
 # 4. comenzar con una solucion seleccionada al azar en el rango encontrado en el paso 2. Fijar T = 1 y Tmin = 10**-5
@@ -43,19 +44,20 @@ T = 1
 Tmin = 10**-5.
 n = 100
 
+s = np.random.uniform(0, 2)
+c = cost(s)
 
-def neighbor (solution):
-	return (2* np.random.random()-1) * 1.0 + solution
-
-i = 0
-for i in range(100):
-	x = np.linspace(-3, 3, num = n)
-	c0 = np.exp(-(x - 1)**2)* np.sin(8*x) + 1
-	cn = (2* np.random.random()-1) * 1.0 + cost(x)
-	if cost(cn)<cost(c0):
-		u = np.exp(c0 - cn)/T
-			
-
+while T > Tmin:
+	for i in range(100):
+		s1 = neighbor(s)
+		c1 = cost(s1)
+		mu = np.random.random()
+		if np.exp((c - c1)/ T > mu:
+			s = s1
+			c = c1
+	T = fT * T
+print ´La solucion optima: %f´ % (s)
+print ´El costo de la solucion optima: %f´ % (c)
 
 # 5. Generar una nueva solucion con la funcion neighbor
 
