@@ -8,15 +8,19 @@ import matplotlib.pyplot as plt
 
 # P1 crear una cuadricula cuadrada de tamano n * n, con n = 100
 
+n = 100
 i = n/2
 j= n/2
 d = 0
-n = 100
+x = 
+
 w = np.zeros([n, n], dtype = np.int8)
 		
 
-plt.plot(i, j)
+plt.plot()
 plt.show()
+
+
 
 
 
