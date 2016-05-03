@@ -7,17 +7,15 @@ import matplotlib
 import matplotlib.pyplot as plt
 
 # P1 crear una cuadricula cuadrada de tamano n * n, con n = 100
-i = 100
-j = 100
-x = range (i, j)
-n = 100
 
-def square(x): 
-	for n in range(100):
-		w = np.zeros([n, n], dtype = np.int8)
+i = n/2
+j= n/2
+d = 0
+n = 100
+w = np.zeros([n, n], dtype = np.int8)
 		
 
-plt.plot(n, square(n))
+plt.plot(i, j)
 plt.show()
 
 
